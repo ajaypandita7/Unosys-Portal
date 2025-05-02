@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestScripts.Holidays">
+      <class name="TestScripts.Designation">
         <methods>
           <include name="logout"/>
-          <include name="DeleteHoliday"/>
+          <include name="AddDesignation"/>
+          <include name="UpdateDesignation"/>
           <include name="browserSettings"/>
-          <include name="Addholiday"/>
         </methods>
-      </class> <!-- TestScripts.Holidays -->
+      </class> <!-- TestScripts.Designation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
