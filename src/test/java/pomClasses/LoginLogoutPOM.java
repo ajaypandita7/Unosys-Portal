@@ -33,10 +33,17 @@ public class LoginLogoutPOM {
 		return SignIn;
 	}
 	
-	@FindBy(linkText = "Log Out")
+	@FindBy(xpath = "//i[@class='mdi mdi-logout menu-icon']")
 	WebElement Logout;
 	
 	public WebElement Logout() { 
 		return Logout;
+	}
+	
+	@FindBy(xpath = "//li[@id='dashboard']")
+	WebElement DashboardModule;
+	
+	public WebElement DashboardModule() { 
+		return DashboardModule;
 	}
 }

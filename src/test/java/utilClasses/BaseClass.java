@@ -31,9 +31,9 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get(prop.inputdata("URL"));
+		
 		//Login 
 		wait.until(ExpectedConditions.visibilityOf(log.username()));
-	
 		log.username().sendKeys(prop.inputdata("username"));
 		log.password().sendKeys(prop.inputdata("password"));
 		log.SignIn().click();
@@ -42,7 +42,7 @@ public class BaseClass {
 	
 	@AfterClass
 	public void logout() {
-		wait.until(ExpectedConditions.visibilityOf(log.Logout()));
+		wait.until(ExpectedConditions.elementToBeClickable(log.Logout()));
 		log.Logout().click();
 		driver.quit();
 	}
