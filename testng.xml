@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="trail.trail"/>
-      <class name="trail.trail2"/>
+      <class name="TestScripts.Holidays"/>
+      <class name="TestScripts.Designation"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

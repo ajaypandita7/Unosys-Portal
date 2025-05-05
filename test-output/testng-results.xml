@@ -2,59 +2,39 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-02T18:42:51 IST" name="Default suite" finished-at="2025-05-02T18:43:05 IST" duration-ms="13961">
+  <suite started-at="2025-05-05T15:37:22 IST" name="Default suite" finished-at="2025-05-05T15:37:45 IST" duration-ms="23150">
     <groups>
     </groups>
-    <test started-at="2025-05-02T18:42:51 IST" name="Default test" finished-at="2025-05-02T18:43:05 IST" duration-ms="13961">
+    <test started-at="2025-05-05T15:37:22 IST" name="Default test" finished-at="2025-05-05T15:37:45 IST" duration-ms="23150">
       <class name="TestScripts.Designation">
-        <test-method is-config="true" signature="browserSettings()[pri:0, instance:TestScripts.Designation@f5958c9]" started-at="2025-05-02T18:42:51 IST" name="browserSettings" finished-at="2025-05-02T18:42:57 IST" duration-ms="6199" status="PASS">
+        <test-method is-config="true" signature="browserSettings()[pri:0, instance:TestScripts.Designation@229f66ed]" started-at="2025-05-05T15:37:22 IST" name="browserSettings" finished-at="2025-05-05T15:37:28 IST" duration-ms="6160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSettings -->
-        <test-method signature="AddDesignation()[pri:0, instance:TestScripts.Designation@f5958c9]" started-at="2025-05-02T18:42:57 IST" name="AddDesignation" finished-at="2025-05-02T18:43:02 IST" duration-ms="4982" status="PASS">
+        <test-method signature="AddDesignation()[pri:0, instance:TestScripts.Designation@229f66ed]" started-at="2025-05-05T15:37:28 IST" name="AddDesignation" finished-at="2025-05-05T15:37:34 IST" duration-ms="5636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDesignation -->
-        <test-method signature="UpdateDesignation()[pri:1, instance:TestScripts.Designation@f5958c9]" started-at="2025-05-02T18:43:02 IST" name="UpdateDesignation" finished-at="2025-05-02T18:43:03 IST" depends-on-methods="TestScripts.Designation.AddDesignation" duration-ms="1167" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="UpdateDesignation()[pri:1, instance:TestScripts.Designation@229f66ed]" started-at="2025-05-05T15:37:34 IST" name="UpdateDesignation" finished-at="2025-05-05T15:37:44 IST" depends-on-methods="TestScripts.Designation.AddDesignation" duration-ms="10110" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[element click intercepted: Element <i class="mdi mdi-pencil"></i> is not clickable at point (1038, 298). Other element would receive the click: <div class="modal show" id="designationModal" aria-modal="true" role="dialog" style="display: block;">...</div>
-  (Session info: chrome=135.0.7049.115)
+              <![CDATA[Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (d5954b2d0ffee9a0605c7eec6153bdc3)] -> xpath: //input[@placeholder='Designation Name']] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.30.0', revision: '509c7f17cc*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [309ae0c954fd21f2191639c4f1ff8ca5, clickElement {id=f.621B21F660BB9B62086379810A312F32.d.10B56ACC60763C407116313C8EBC0C5B.e.103}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55903/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (309ae0c954fd21f2191639c4f1ff8ca5)] -> xpath: (//i[@class='mdi mdi-pencil'])[1]]
-Session ID: 309ae0c954fd21f2191639c4f1ff8ca5]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51021}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51021/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5954b2d0ffee9a0605c7eec6153bdc3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="mdi mdi-pencil"></i> is not clickable at point (1038, 298). Other element would receive the click: <div class="modal show" id="designationModal" aria-modal="true" role="dialog" style="display: block;">...</div>
-  (Session info: chrome=135.0.7049.115)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (d5954b2d0ffee9a0605c7eec6153bdc3)] -> xpath: //input[@placeholder='Designation Name']] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.30.0', revision: '509c7f17cc*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [309ae0c954fd21f2191639c4f1ff8ca5, clickElement {id=f.621B21F660BB9B62086379810A312F32.d.10B56ACC60763C407116313C8EBC0C5B.e.103}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55903/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (309ae0c954fd21f2191639c4f1ff8ca5)] -> xpath: (//i[@class='mdi mdi-pencil'])[1]]
-Session ID: 309ae0c954fd21f2191639c4f1ff8ca5
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at TestScripts.Designation.UpdateDesignation(Designation.java:59)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51021}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51021/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5954b2d0ffee9a0605c7eec6153bdc3
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at TestScripts.Designation.UpdateDesignation(Designation.java:57)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -83,35 +63,33 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateDesignation -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:TestScripts.Designation@f5958c9]" started-at="2025-05-02T18:43:03 IST" name="logout" finished-at="2025-05-02T18:43:05 IST" duration-ms="1582" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestScripts.Designation@229f66ed]" started-at="2025-05-05T15:37:44 IST" name="logout" finished-at="2025-05-05T15:37:45 IST" duration-ms="1121" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[stale element reference: stale element not found
+              <![CDATA[element click intercepted: Element <a href="/logout" class="nav-link">...</a> is not clickable at point (135, 716). Other element would receive the click: <div class="modal show" id="designationModal" aria-modal="true" role="dialog" style="padding-right: 15px; display: block;">...</div>
   (Session info: chrome=135.0.7049.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.30.0', revision: '509c7f17cc*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [309ae0c954fd21f2191639c4f1ff8ca5, clickElement {id=f.621B21F660BB9B62086379810A312F32.d.10B56ACC60763C407116313C8EBC0C5B.e.105}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55903/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (309ae0c954fd21f2191639c4f1ff8ca5)] -> xpath: //i[@class='mdi mdi-logout menu-icon']]
-Session ID: 309ae0c954fd21f2191639c4f1ff8ca5]]>
+Command: [d5954b2d0ffee9a0605c7eec6153bdc3, clickElement {id=f.BFE1F00168870F150B6DC5FAFC7E117F.d.1EB0CFD0093C68F936436A98DCA9D039.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51021}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51021/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5954b2d0ffee9a0605c7eec6153bdc3)] -> link text: Log Out]
+Session ID: d5954b2d0ffee9a0605c7eec6153bdc3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/logout" class="nav-link">...</a> is not clickable at point (135, 716). Other element would receive the click: <div class="modal show" id="designationModal" aria-modal="true" role="dialog" style="padding-right: 15px; display: block;">...</div>
   (Session info: chrome=135.0.7049.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.30.0', revision: '509c7f17cc*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [309ae0c954fd21f2191639c4f1ff8ca5, clickElement {id=f.621B21F660BB9B62086379810A312F32.d.10B56ACC60763C407116313C8EBC0C5B.e.105}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55903/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (309ae0c954fd21f2191639c4f1ff8ca5)] -> xpath: //i[@class='mdi mdi-logout menu-icon']]
-Session ID: 309ae0c954fd21f2191639c4f1ff8ca5
+Command: [d5954b2d0ffee9a0605c7eec6153bdc3, clickElement {id=f.BFE1F00168870F150B6DC5FAFC7E117F.d.1EB0CFD0093C68F936436A98DCA9D039.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51021}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51021/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5954b2d0ffee9a0605c7eec6153bdc3)] -> link text: Log Out]
+Session ID: d5954b2d0ffee9a0605c7eec6153bdc3
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -127,8 +105,8 @@ at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at utilClasses.BaseClass.logout(BaseClass.java:46)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at utilClasses.BaseClass.logout(BaseClass.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -156,7 +134,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
