@@ -16,10 +16,11 @@ import pomClasses.LoginLogoutPOM;
 
 public class BaseClass {
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	public LoginLogoutPOM log;
 	public MypropertiesClass prop;
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	public WebDriverWait wait ;
+	public ExcelClass excel;
 
 	
 	@BeforeClass
@@ -27,6 +28,8 @@ public class BaseClass {
 		driver = new ChromeDriver();
 		log = new LoginLogoutPOM(driver);
 		prop = new MypropertiesClass();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		excel=new ExcelClass();
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

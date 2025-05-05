@@ -1,21 +1,21 @@
 package TestScripts;
 
-import java.time.Duration;
+import static org.testng.Assert.fail;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 
 import pomClasses.HolidaysPOM;
 import pomClasses.LoginLogoutPOM;
 import utilClasses.BaseClass;
+import utilClasses.Listners;
 
+@Listeners(Listners.class)
 public class Holidays extends BaseClass {
 	HolidaysPOM holiday;
 	LoginLogoutPOM log;
-
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
      
 	public void clickNextButtonFourTimes() {
 		for (int i = 0; i < 3; i++) {
@@ -62,6 +62,7 @@ public class Holidays extends BaseClass {
 		holiday.HolidayName().sendKeys("Independence Day");
 		
 		holiday.CreateHoliday().click();
+		
 		
 	}
 	
